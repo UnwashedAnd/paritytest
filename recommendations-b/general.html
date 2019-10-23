@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>EcoFurb | Choose your address</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css" integrity="sha256-QVBN0oT74UhpCtEo4Ko+k3sNo+ykJFBBtGduw13V9vw=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js" integrity="sha256-qs5p0BFSqSvrstBxPvex+zdyrzcyGdHNeNmAirO2zc0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="ui massive top menu">
+    <a href="/parity" class="item">
+      <img class="ui small image" src="../img/logo.svg" />
+    </a>
+    <div class="right menu">
+      <a href="/parity" class="item">Home</a>
+      <a href="/parity/recommendations/general" class="item">A</a>
+      <a href="/parity/recommendations-b/general" class="item">B</a>
+    </div>
+  </div>
+  <div class="ui fluid steps">
+    <a href="/parity/your-home" class="link step">
+      <div class="content">
+        <div class="title">Your home</div>
+      </div>
+    </a>
+    <a href="/parity/edit-home" class="link step">
+      <div class="content">
+        <div class="title">Edit home details</div>
+      </div>
+    </a>
+    <a href="general" class="link active step">
+      <div class="content">
+        <div class="title">Build your plan</div>
+      </div>
+    </a>
+    <a href="/parity/recommendations" class="link step">
+      <div class="content">
+        <div class="title">Review your plan</div>
+      </div>
+    </a>
+  </div>
+  <div class="ui section hidden divider"></div>
+  <div class="ui section hidden divider"></div>
+  <div class="ui container">
+    <div class="ui grid">
+      <div class="sixteen wide mobile ten wide tablet eight wide computer">
+        <h1 class="ui header">Improvements to your home</h1>
+        <p>Based on the data we have about your home, we think these improvements may be suitable.</p>
+        <p>Something not right? <a href="../edit-home">Update your data.</a></p>
+      </div>
+    </div>
+    <div class="ui hidden divider"></div>
+    <div class="ui section divider"></div>
+    <div class="ui grid">
+
+      <div class="three wide column">
+
+
+        <h3>Filter by</h3>
+        <div class="ui checkbox">
+          <input type="checkbox" name="example">
+          <label>Roof</label>
+        </div><br><br>
+        <div class="ui checkbox">
+          <input type="checkbox" name="example">
+          <label>Walls &amp; floor</label>
+        </div><br><br>
+        <div class="ui checkbox">
+          <input type="checkbox" name="example">
+          <label>General</label>
+        </div><br><br>
+        <div class="ui checkbox">
+          <input type="checkbox" name="example">
+          <label>Hot water</label>
+        </div><br><br>
+        <div class="ui checkbox">
+          <input type="checkbox" name="example">
+          <label>Heat</label>
+        </div><br><br>
+        <div class="ui checkbox">
+          <input type="checkbox" name="example">
+          <label>Renewables</label>
+        </div><br><br>
+        <h3>Sort by</h3>
+        <div class="ui fluid selection dropdown">
+          <input type="hidden" name="gender">
+          <i class="dropdown icon"></i>
+          <div class="default text">Recommended</div>
+          <div class="menu">
+            <div class="item" data-value="2">EPC rating (high to low)</div>
+            <div class="item" data-value="1">Payback (high to low)</div>
+            <div class="item" data-value="0">Price (high to low)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nine wide column">
+            <div class="ui three stackable cards">
+            <div class="ui raised link card">
+              <div class="image">
+                <img src="../img/chimney.png">
+              </div>
+              <div class="content">
+                <div class="meta">
+                  General
+                </div>
+                <h3 class="header">Block open chimney with "chimney sheep"</h3>
+                <div class="meta">
+                  <strong>£50</strong>
+                </div>
+              </div>
+              <div class="ui basic bottom attached button add">
+                  <i class="add icon"></i>Add
+              </div>
+            </div>
+            <div class="ui raised link card">
+              <div class="image">
+                <img src="../img/solar.png">
+              </div>
+              <div class="content">
+                <div class="meta">
+                  Roof
+                </div>
+                <h3 class="header">Solar photovoltaic panels to fit the roof</h3>
+                <div class="meta">
+                  <strong>£5,000</strong>
+                </div>
+              </div>
+              <div class="ui basic bottom attached button add">
+                  <i class="add icon"></i>Add
+              </div>
+            </div>
+            <div class="ui raised link card">
+              <div class="image">
+                <img src="../img/insulation.png">
+              </div>
+              <div class="content">
+                <div class="meta">
+                  Roof
+                </div>
+                <h3 class="header">Room-in-roof insulation throughout</h3>
+                <div class="meta">
+                  <strong>£2,900</strong>
+                </div>
+              </div>
+              <div class="ui basic bottom attached button add">
+                  <i class="add icon"></i>Add
+              </div>
+            </div>
+            <div class="ui raised link card">
+              <div class="image">
+                <img src="../img/loft-insulation.png">
+              </div>
+              <div class="content">
+                <div class="meta">
+                  Roof
+                </div>
+                <h3 class="header">Loft insulation up to 300mm</h3>
+                <div class="meta">
+                  <strong>£450</strong>
+                </div>
+              </div>
+              <div class="ui basic bottom attached button add">
+                  <i class="add icon"></i>Add
+              </div>
+            </div>
+            <div class="ui raised link card">
+              <div class="image">
+                <img src="../img/external-wall.png">
+              </div>
+              <div class="content">
+                <div class="meta">
+                  Walls & Floors
+                </div>
+                <h3 class="header">External wall insulation</h3>
+                <div class="meta">
+                  <strong>£13,000</strong>
+                </div>
+              </div>
+              <div class="ui basic bottom attached button add">
+                  <i class="add icon"></i>Add
+              </div>
+            </div>
+            <div class="ui raised link card">
+              <div class="image">
+                <img src="../img/internal-wall.png">
+              </div>
+              <div class="content">
+                <div class="meta">
+                  Walls & Floors
+                </div>
+                <h3 class="header">Internal wall insulation</h3>
+                <div class="meta">
+                  <strong>£11,200</strong>
+                </div>
+              </div>
+              <div class="ui basic bottom attached button add">
+                  <i class="add icon"></i>Add
+              </div>
+            </div>
+            <div class="ui raised link card">
+              <div class="image">
+                <img src="../img/floor.png">
+              </div>
+              <div class="content">
+                <div class="meta">
+                  Walls & Floors
+                </div>
+                <h3 class="header">Under floor insulation</h3>
+                <div class="meta">
+                  <strong>£2,700</strong>
+                </div>
+              </div>
+              <div class="ui basic bottom attached button add">
+                  <i class="add icon"></i>Add
+              </div>
+            </div>
+            <div class="ui raised link card">
+              <div class="image">
+                <img src="../img/combi.png">
+              </div>
+              <div class="content">
+                <div class="meta">
+                  Hot water
+                </div>
+                <h3 class="header">Energy efficient combi boiler</h3>
+                <div class="meta">
+                  <strong>£2,600</strong>
+                </div>
+              </div>
+              <div class="ui basic bottom attached button add">
+                  <i class="add icon"></i>Add
+              </div>
+            </div>
+            <div class="ui disabled card">
+              <div class="image">
+                <img src="../img/pump.png">
+              </div>
+              <div class="content">
+                <div class="meta">
+                  General
+                </div>
+                <h3 class="header">Air source heat pump with radiators</h3>
+                <div class="meta">
+                  <strong>£5,400</strong>
+                </div>
+              </div>
+              <div class="ui basic bottom attached button add">
+                  <i class="add icon"></i>Add
+              </div>
+            </div>
+            <div class="ui disabled card">
+              <div class="image">
+                <img src="../img/water.png">
+              </div>
+              <div class="content">
+                <div class="meta">
+                  Hot water
+                </div>
+                <h3 class="header">Waste water heat recovery system</h3>
+                <div class="meta">
+                  <strong>£900</strong>
+                </div>
+              </div>
+              <div class="ui basic bottom attached button add">
+                  <i class="add icon"></i>Add
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="four wide column">
+        <div class="ui segments">
+          <div class="ui segment">
+            <h2>Your summary</h2>
+            <h5>IMPROVEMENTS</h5>
+            <div id="summary" class="ui very relaxed divided list">
+
+              </div>
+              <table class="ui very basic large table">
+                <tbody>
+
+
+                  <tr class="inverted">
+                    <td data-label="Job">Total:</td>
+                    <td data-label="Name"><strong>£3,400<strong></td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <p><a class="ui large yellow fluid button" href="../recommendations">View your summary</a></p>
+            </div>
+            <div class="ui segment">
+              <h3>Metrics</h3>
+              <table class="ui very basic large table">
+                <tbody>
+              <tr>
+                <td data-label="Job">Yearly savings:</td>
+                <td data-label="Name"><strong>£600<strong></td>
+              </tr>
+              <tr>
+                <td data-label="Job">CO<sub>2</sub> reduction</td>
+                <td data-label="Name"><strong>5kg<strong></td>
+              </tr>
+            </tbody>
+          </table>
+              <img class="ui fluid image" src="../img/epc.png" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="ui hidden section divider"></div>
+  <div class="ui hidden section divider"></div>
+
+  <div class="ui modal">
+    <i class="close icon"></i>
+    <div class="header">
+    Information about that item
+    </div>
+  <div class="image content">
+    <div class="ui bordered image">
+      <img src="../img/image.png">
+    </div>
+    <div class="description">
+      <img src="../img/text.png" class="ui fluid image" alt="">
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      var item = "<div class='item'><div class='header'>Item you added</div><div class='description'><a class='remove'>Remove</a></div></div>";
+
+      $(".add").click(function() {
+        $("#summary").append(item);
+        let eventthis = this;
+        $(this).html('<i class="check green icon"></i>Added');
+
+        setTimeout((eventthis) => {
+          $(this).html('<i class="add icon"></i>Add');
+        }, 1500);
+
+      });
+
+      $(document).on('click', '.remove', function(event) {
+        $(this).parent().parent().remove()
+      });
+
+      $('.ui.dropdown').dropdown();
+
+      $('.image, .content').on('click', function(event) {
+        $('.ui.modal').modal('show');
+      })
+  </script>
+
+</body>
+
+</html>

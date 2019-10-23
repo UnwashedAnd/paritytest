@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>EcoFurb | Choose your address</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css" integrity="sha256-QVBN0oT74UhpCtEo4Ko+k3sNo+ykJFBBtGduw13V9vw=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/parity/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js" integrity="sha256-qs5p0BFSqSvrstBxPvex+zdyrzcyGdHNeNmAirO2zc0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="ui massive top menu">
+    <a href="/parity" class="item">
+      <img class="ui small image" src="img/logo.svg" />
+    </a>
+    <div class="right menu">
+      <a href="/parity" class="item">Home</a><a href="/parity/recommendations/general" class="item">A</a><a href="/parity/recommendations-b/general" class="item">B</a>
+    </div>
+  </div>
+  <div class="ui fluid steps">
+    <a href="your-home" class="link  step">
+      <div class="content">
+        <div  class="title">Your home</div>
+      </div>
+    </a>
+    <a href="edit-home" class="link active step">
+      <div class="content">
+        <div  class="title">Edit home details</div>
+      </div>
+    </a>
+    <a href="/parity/motivations" class="link step">
+      <div class="content">
+        <div  class="title">Build your plan</div>
+      </div>
+    </a>
+    <a href="recommendations" class="link step">
+      <div class="content">
+        <div  class="title">Review your plan</div>
+      </div>
+    </a>
+  </div>
+  <div class="ui hidden section divider"></div>
+
+  <div class="ui container">
+    <div class="ui grid">
+      <div class="twelve wide column">
+        <h1 class="ui header">Edit your home details</h1>
+        <div class="ui hidden divider"></div>
+      </div>
+    </div>
+
+    <div class="ui fluid steps">
+      <a href="edit-home" class="link active step">
+        <div class="content">
+          <div class="title">General</div>
+        </div>
+      </a>
+      <a href="edit-roof" class="link step">
+        <div class="content">
+          <div class="title">Roof</div>
+        </div>
+      </a>
+      <a href="#" class="link step">
+        <div class="content">
+          <div class="title">Walls &amp; floors</div>
+        </div>
+      </a>
+      <a href="#" class="link step">
+        <div class="content">
+          <div class="title">Heat</div>
+        </div>
+      </a>
+      <a href="#" class="link step">
+        <div class="content">
+          <div class="title">Hot water</div>
+        </div>
+      </a>
+      <a href="#" class="link step">
+        <div class="content">
+          <div class="title">Renewables</div>
+        </div>
+      </a>
+    </div>
+    <div class="ui hidden section divider"></div>
+    <div class="ui grid">
+
+
+      <div class="ten wide column">
+
+        <h3>What type of home do you have?</h3>
+        <button class="ui clickable button">
+          House
+        </button>
+        <button class="ui clickable button">
+          Flat or apartment
+        </button>
+        <button class="ui clickable button">
+          Bungalow
+        </button>
+        <button class="ui clickable button">
+          Other
+        </button>
+        <h3>How many rooms do you have?</h3>
+        <button class="ui clickable button">
+          1
+        </button>
+        <button class="ui clickable button">
+          2
+        </button>
+        <button class="ui clickable button">
+          3
+        </button>
+        <button class="ui clickable button">
+          4
+        </button>
+        <button class="ui clickable button">
+          5+
+        </button>
+        <h3>Is your home detached</h3>
+        <button class="ui clickable button">
+          Detached
+        </button>
+        <button class="ui clickable button">
+          Semi-detached
+        </button>
+        <button class="ui clickable button">
+          Terraced
+        </button>
+        <button class="ui clickable button">
+          End-terraced
+        </button>
+        <div class="ui hidden divider"></div>
+        <p><a class="ui huge yellow fluid button" href="edit-roof">Next - Roof</a></p>
+        <a class="ui fluid button" href="../motivations">Skip to build your plan</a>
+      </div>
+
+    </div>
+  </div>
+  <div class="ui hidden section divider"></div>
+  <div class="ui hidden section divider"></div>
+
+  <script type="text/javascript">
+    $(".clickable").on('click', function(event) {
+      $target = $(event.target);
+      $target.addClass('green');
+    });
+  </script>
+</body>
+
+</html>
